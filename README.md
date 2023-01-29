@@ -2,6 +2,7 @@
 ```
 pip install django
 pip install djangorestframework
+pip install pillow
 ```
 2. このリポジトリをclone
 3. settings.pyのあるディレクトリで以下のコマンド
