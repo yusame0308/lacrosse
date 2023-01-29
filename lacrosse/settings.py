@@ -10,6 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+try:
+    from .settings_local import *
+except ImportError:
+    pass
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -21,9 +26,6 @@ MEDIA_URL = '/media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-z44s^u(q2qtqs%n7ivv6(otafe))#t4*u2#w5d_7v3ntdpog6m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
