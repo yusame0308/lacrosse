@@ -5,19 +5,18 @@ pip install djangorestframework
 pip install pillow
 ```
 2. このリポジトリをclone
-3. settings.pyのあるディレクトリで以下のコマンド
+3. 以下のコマンドでSecret Keyを生成
 ```
-python generate_secretkey_setting.py > settings_local.py
+make secretkey
 ```
 4. ルートディレクトリで以下のコマンド
 ```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+make migrate
+make create-admin-user
 ```
 5. サーバーを起動
 ```
-python manage.py runserver
+make run
 ```
 - 管理画面(http://localhost:8000/admin)
 - API(http://localhost:8000/api)

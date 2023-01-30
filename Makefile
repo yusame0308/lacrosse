@@ -7,7 +7,10 @@ migrate:
 secretkey:
 	python lacrosse/generate_secretkey_setting.py > lacrosse/settings_local.py
 
-init:
+create-admin-user:
+	python manage.py createsuperuser
+
+build-railway:
 	make secretkey
 	make migrate
-	make run
+	
