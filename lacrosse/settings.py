@@ -67,6 +67,8 @@ CORS_ORIGIN_WHITELIST = [
      'http://localhost:3001'
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://lacrosse-production.up.railway.app']
+
 ROOT_URLCONF = 'lacrosse.urls'
 
 TEMPLATES = [
