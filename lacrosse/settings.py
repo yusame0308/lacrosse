@@ -28,7 +28,7 @@ MEDIA_URL = '/media/'
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['lacrosse-staff-app.vercel.app', 'www.lacrosse-staff-app.vercel.app',]
