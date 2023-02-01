@@ -30,7 +30,7 @@ MEDIA_URL = '/media/'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://lacrosse-staff-app.vercel.app/"]
+ALLOWED_HOSTS = ["lacrosse-staff-app.vercel.app"]
 
 
 # Application definition
